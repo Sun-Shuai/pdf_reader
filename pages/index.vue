@@ -1,15 +1,22 @@
 <template>
   <div id="app">
 
-    <iframe src="/pdf_js/viewer.html" style="width: 100%;height: 100%"></iframe>
+    <div id="pdf">
+      <pdf/>
+    </div>
+
+    <div id="ad">广告位</div>
 
   </div>
 </template>
 
 <script>
+  import pdf from '~/components/pdf.vue'
 
   export default {
-    components: {},
+    components: {
+      pdf
+    },
     metaInfo: {},
     data() {
       return {}
@@ -18,20 +25,15 @@
 </script>
 
 <style>
-  html, body {
-    height: 100%;
-    width: 100%;
+
+  #pdf {
+    width: 80%;
+    background: #70DB55;
   }
 
-  #app {
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #7f828b;
+  #ad {
+    width: 2%;
+    background: orange;
   }
+
 </style>

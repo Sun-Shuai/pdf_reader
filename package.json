@@ -1,7 +1,6 @@
 {
   "name": "pdf_reader",
   "version": "1.0.0",
-  "keywords": ["PDF reader","PDF viewer","PDF 阅读器","在线PDF"],
   "description": "an online pdf reader for word segmentation translation",
   "author": "sunshuai",
   "private": true,
@@ -13,6 +12,7 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
+    "element-ui": "^2.7.2",
     "nuxt": "^2.4.0"
   },
   "devDependencies": {
