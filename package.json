@@ -1,6 +1,7 @@
 {
   "name": "pdf_reader",
   "version": "1.0.0",
+  "keywords": ["PDF reader","PDF viewer","PDF 阅读器","在线PDF"],
   "description": "an online pdf reader for word segmentation translation",
   "author": "sunshuai",
   "private": true,
@@ -15,7 +16,6 @@
     "nuxt": "^2.4.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9",
-    "pdfjs-dist": "^2.0.943"
+    "nodemon": "^1.18.9"
   }
 }
