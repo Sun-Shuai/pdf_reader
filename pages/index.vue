@@ -1,11 +1,26 @@
 <template>
   <div id="app">
 
-    <div id="pdf">
-      <pdf/>
-    </div>
+    <el-row :gutter="1">
 
-    <div id="ad">广告位</div>
+      <el-col :span="3">
+        <div id="ad">This is ad area!</div>
+      </el-col>
+
+
+      <el-col :span="18">
+        <div id="pdf">
+          <pdf/>
+        </div>
+      </el-col>
+
+
+      <el-col :span="3">
+        <div id="function">This is function area!</div>
+      </el-col>
+
+    </el-row>
+
 
   </div>
 </template>
@@ -26,14 +41,22 @@
 
 <style>
 
-  #pdf {
-    width: 80%;
-    background: #70DB55;
+  html, body {
+    height: 100%;
   }
 
   #ad {
-    width: 2%;
     background: orange;
   }
+
+  #pdf {
+    background: #70DB55;
+  }
+
+  #function{
+    background: blueviolet;
+  }
+
+
 
 </style>

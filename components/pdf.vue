@@ -1,5 +1,5 @@
 <template>
-    <div>test...</div>
+    <div>This is pdf reader area...</div>
 
 </template>
 
