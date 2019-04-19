@@ -9,9 +9,7 @@
 
 
       <el-col :span="18">
-        <div id="pdf">
           <pdf/>
-        </div>
       </el-col>
 
 
@@ -45,16 +43,29 @@
     height: 100%;
   }
 
+  #app{
+    height: 100%;
+  }
+
+  el-row{
+    height: 100%;
+  }
+
+  el-col{
+    height: 100%;
+  }
+
   #ad {
     background: orange;
   }
 
-  #pdf {
+  pdf {
+    height: 100%;
     background: #70DB55;
   }
 
   #function{
-    background: blueviolet;
+    background: orange;
   }
 
 

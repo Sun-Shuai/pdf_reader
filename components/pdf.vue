@@ -1,5 +1,7 @@
 <template>
-    <div>This is pdf reader area...</div>
+    <div id="app">
+      <iframe id="pdf" src="pdf_js/viewer.html"></iframe>
+    </div>
 
 </template>
 
@@ -9,6 +11,15 @@
     }
 </script>
 
-<style scoped>
+<style>
+
+  #app{
+    height: 100%;
+  }
+
+  #pdf{
+    width: 100%;
+    height: 100%;
+  }
 
 </style>
