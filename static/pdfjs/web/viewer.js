@@ -1546,7 +1546,7 @@ var PDFViewerApplication = {
 };
 var validateFileURL = void 0;
 {
-  var HOSTED_VIEWER_ORIGINS = ['null', 'http://mozilla.github.io', 'https://mozilla.github.io'];
+  var HOSTED_VIEWER_ORIGINS = ['null', 'http://ai-developer.net', 'https://ai-developer.net'];
   validateFileURL = function validateFileURL(file) {
     if (file === undefined) {
       return;
@@ -1594,7 +1594,8 @@ function webViewerInitialized() {
   var file = void 0;
   var queryString = document.location.search.substring(1);
   var params = (0, _ui_utils.parseQueryString)(queryString);
-  file = 'file' in params ? params.file : _app_options.AppOptions.get('defaultUrl');
+  // file = 'file' in params ? params.file : _app_options.AppOptions.get('defaultUrl');
+  file = 'file' in params ? params.file : null;
   validateFileURL(file);
   var fileInput = document.createElement('input');
   fileInput.id = appConfig.openFileInputName;
@@ -4350,7 +4351,7 @@ var defaultOptions = {
     kind: OptionKind.VIEWER
   },
   defaultUrl: {
-    value: 'A practical theory for designing very deep convolutional neural networks.pdf',
+    value: 'example.pdf',
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {
