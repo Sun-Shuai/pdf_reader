@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" style="padding: 0">
 
-    <iframe id="pdf" src="pdf_js/viewer.html"></iframe>
+    <iframe id="pdf" src="pdfjs/web/viewer.html" frameborder="0"></iframe>
 
   </div>
 </template>
