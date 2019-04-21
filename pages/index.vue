@@ -1,36 +1,15 @@
 <template>
   <div id="app">
 
-    <el-row :gutter="1">
-
-      <el-col :span="3">
-        <div id="ad">This is ad area!</div>
-      </el-col>
-
-
-      <el-col :span="18">
-          <pdf/>
-      </el-col>
-
-
-      <el-col :span="3">
-        <div id="function">This is function area!</div>
-      </el-col>
-
-    </el-row>
-
+    <iframe id="pdf" src="pdf_js/viewer.html"></iframe>
 
   </div>
 </template>
 
 <script>
-  import pdf from '~/components/pdf.vue'
 
   export default {
-    components: {
-      pdf
-    },
-    metaInfo: {},
+    components: {},
     data() {
       return {}
     }
@@ -39,35 +18,21 @@
 
 <style>
 
-  html, body {
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+
+  #app {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+  }
+
+  #pdf {
+    width: 100%;
     height: 100%;
   }
-
-  #app{
-    height: 100%;
-  }
-
-  el-row{
-    height: 100%;
-  }
-
-  el-col{
-    height: 100%;
-  }
-
-  #ad {
-    background: orange;
-  }
-
-  pdf {
-    height: 100%;
-    background: #70DB55;
-  }
-
-  #function{
-    background: orange;
-  }
-
 
 
 </style>
